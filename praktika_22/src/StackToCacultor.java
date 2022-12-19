@@ -38,7 +38,7 @@ public class StackToCacultor{
                     }
                     break;
                 }
-                System.out.println("ToCacultor-Suffix:"+strArr[i]);
+                System.out.println("Суффикс"+strArr[i]);
                 if(stack.empty()) {
                     stack.push(strArr[i]);
                 }else {
@@ -142,8 +142,8 @@ public class StackToCacultor{
         Stack stack = new Stack();
         for(int i=0;i<textArray.length-1;i++) {
             if(textArray[i]!=null) {
-                System.out.println("ToSuffix Infix:"+textArray[i]);
-                int priority = ToCampare(textArray[i]); //2x(3+2)
+                System.out.println("Постфикс:"+textArray[i]);
+                int priority = ToCampare(textArray[i]);
                 if(isNum(textArray[i])) {
                     textArr2[k++] = textArray[i];
                 }else {
