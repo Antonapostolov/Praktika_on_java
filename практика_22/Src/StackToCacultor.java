@@ -158,7 +158,8 @@ public class StackToCacultor{
                             }
                             stack.pop();
                             continue;
-                        }else if(priority>ToCampare(String.valueOf(stack.peek()))) {//Priority greater than top of stack
+                        }else if(priority>ToCampare(String.valueOf(stack.peek()))) {
+                            
                             stack.push(textArray[i]);
                             continue;
                         }else {
