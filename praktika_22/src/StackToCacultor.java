@@ -37,7 +37,7 @@ public class StackToCacultor{
                         }
                     }
                     break;
-                }	// 2x(3+2)
+                }
                 System.out.println("ToCacultor-Suffix:"+strArr[i]);
                 if(stack.empty()) {
                     stack.push(strArr[i]);
@@ -108,7 +108,7 @@ public class StackToCacultor{
 
     }
 
-    //Character to array
+
     public static String[] toArr(String text) {
         int i = 0,j = 0;
         char c;
@@ -136,7 +136,7 @@ public class StackToCacultor{
         return textArr;
     }
 
-    //Infix expression to suffix
+
     public static String[] ToSuffix(String[] textArray) {
         int k=0;
         Stack stack = new Stack();
@@ -180,12 +180,12 @@ public class StackToCacultor{
                     textArr2[k++] = String.valueOf(stack.pop());
                 }
             }
-        }//for
+        }
 
         return textArr2;
     }
 
-    //Number 1 or not
+
     public static boolean isNum(char strNum) {
         if(strNum=='1'||strNum=='2'||strNum=='3'||strNum=='4'
                 ||strNum=='5'||strNum=='6'||strNum=='7'
