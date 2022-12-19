@@ -5,7 +5,7 @@ import java.util.Vector;
 public class StackToCacultor{
     private static String[] textArr = new String[50];
     private static String[] textArr2 = new String[50];
-    private final static int sizeofSum = 2;//priority
+    private final static int sizeofSum = 2;
     private final static int sizeofSub = 2;
     private final static int sizeofMul = 3;
     private final static int sizeofDiv = 3;
@@ -18,7 +18,7 @@ public class StackToCacultor{
             textArr2[i] = null;
         }
     }
-    //Final calculation
+
     public static double ToCacultor(String Ctext) {
         int numkey = 0;
         int strkey = 0;
@@ -158,7 +158,7 @@ public class StackToCacultor{
                             }
                             stack.pop();
                             continue;
-                        }else if(priority>ToCampare(String.valueOf(stack.peek()))) {//Priority greater than top of stack
+                        }else if(priority>ToCampare(String.valueOf(stack.peek()))) {
                             stack.push(textArray[i]);
                             continue;
                         }else {
@@ -196,7 +196,7 @@ public class StackToCacultor{
         }
     }
 
-    //Number 2 or not
+
     public static boolean isNum(String strNum) {
         if(!strNum.equals("+")&&!strNum.equals("-")&&!strNum.equals("x")
                 &&!strNum.equals("/")&&!strNum.equals("(")&&!strNum.equals(")")) {
@@ -206,7 +206,7 @@ public class StackToCacultor{
         }
     }
 
-    //Operator priority comparison STR1 > STR2 returns true
+
     public static int ToCampare(String str1) {
         int key = -1;
         switch (str1) {
@@ -228,7 +228,7 @@ public class StackToCacultor{
         return key;
     }
 
-    //test
+
     public static void main(String[] args) {
 //		String[] strings = toArr("(1222.2x231+232)/123123.23+(323.2+323)");
 //		String[] strings = toArr("2x(3+2)");//10
